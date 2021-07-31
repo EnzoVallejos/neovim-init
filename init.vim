@@ -12,9 +12,9 @@ call plug#end()
 :set encoding=UTF-8
 :colorscheme gruvbox
 :set termguicolors
-:set tabstop=4
 :set shiftwidth=4
 :set expandtab
+:set tabstop=4
 :set conceallevel=1
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
@@ -29,10 +29,18 @@ nnoremap <C-f> :NERDTree<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 :imap ii <Esc>
 
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 let mapleader = "."
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <leader>y :q<CR>
 nnoremap <Leader>s :w<CR>
+" uses the leader key for move between splits
+nnoremap <Leader>h :wincmd h<CR>
+nnoremap <Leader>l :wincmd l<CR>
+nnoremap <Leader>j :wincmd j<CR>
+nnoremap <Leader>k :wincmd k<CR>
 
 " Start NERDTree when Vim is started without file arguments.
 autocmd StdinReadPre * let s:std_in=1
