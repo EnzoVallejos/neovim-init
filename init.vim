@@ -27,7 +27,11 @@ nnoremap <C-l> :tabn<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTree<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
 :imap ii <Esc>
+"keys for add one line in insert mode
+:imap <S-n> <C-O>O
+:imap <S-e> <C-j>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
