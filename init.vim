@@ -30,8 +30,8 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 :imap ii <Esc>
 "keys for add one line in insert mode
-:imap <C-s> <C-O>O
-:imap <C-e> <C-j>
+:imap <C-e> <C-O>O
+:imap <C-s> <C-j>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
